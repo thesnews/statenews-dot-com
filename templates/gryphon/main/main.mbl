@@ -1,0 +1,60 @@
+{% extends "gryphon/base.mbl" %}
+
+
+
+{% block content %}
+
+	{% set topStory = articles.shift() %}
+	{% set secondaryStories = articles.shift(3) %}
+	{% import "macros/article.mbl" as articleRender %}
+
+
+
+	<div id="col1">
+
+		{% if breaking %}
+		<div class="breaking-box">
+
+			<h3><a href="{{ breaking.url }}">{{ breaking.headline }}</a></h3>
+			Last updated {{ breaking.modified|timeSince }}
+		</div>
+
+		<hr class="spacer" />
+
+		{% endif %}
+
+		{% if developing %}
+		<div class="developing-box">
+
+			<h3><a href="{{ developing.url }}">{{ developing.headline }}</a></h3>
+			Last updated {{ developing.modified|timeSince }}
+		</div>
+
+		<hr class="spacer" />
+
+		{% endif %}
+
+		{{ articleRender.featured(topStory) }}
+
+		{% include 'gryphon/ads/mobile.mbl' %}
+
+		<ul class="listview">
+			{% for article in articles %}
+				<li>
+					<a href="{{ article.url }}">{{ article.headline }} <span class="quiet">({{ article.created|date('m/d/y') }})</span></a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+	<div id="col2" class="preserve">
+		{% for article in secondaryStories %}
+			{{ articleRender.subFeatured(article) }}
+		{% endfor %}
+	</div>
+
+
+
+
+
+{% endblock content %}

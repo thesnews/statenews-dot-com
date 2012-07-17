@@ -1,0 +1,68 @@
+var questions = {
+	"Food": [
+		{"label": "Best Overall Restaurant", "options": ["Aladdin's Restaurant", "Peking Express", "Crunchy's", "Harper's Brewpub", "Los Tres Amigos", "The Peanut Barrel"]},
+		{"label": "Best Pizza", "options": ["Crunchy's", "Harper's Brewpub"]},
+		{"label": "Best Burger", "options": ["Tony's", "P.T. O'Malley's", "Crunchy's", "Harper's Brewpub", "The Peanut Barrel", "The Riv"]},
+		{"label": "Best Wings", "options": ["Harper's Brewpub", "The Riv"]},
+		{"label": "Best Sushi", "options": []},
+		{"label": "Best Chinese", "options": ["Peking Express"]},
+		{"label": "Best Thai", "options": []},
+		{"label": "Best Mexican", "options": ["Los Tres Amigos"]},
+		{"label": "Best Italian", "options": []},
+		{"label": "Best Dessert", "options": ["Aladdin's Restaurant"]},
+		{"label": "Best Sandwich Place", "options": ["Tony's", "The Peanut Barrel"]},
+		{"label": "Best Breakfast Place", "options": ["Tony's"]},
+		{"label": "Best Steakhouse", "options": []},
+		{"label": "Best Late Night", "options": ["Crunchy's", "Harper's Brewpub"]},
+		{"label": "Best Restaurant for a Date", "options": ["Aladdin's Restaurant", "Crunchy's", "Harper's Brewpub", "The Peanut Barrel", "The Riv"]},
+		{"label": "Best Place to Eat OnCampus", "options": []},
+		{"label": "Best Coffee House", "options": []},
+		{"label": "Best Place to Be Spoiled By Your Parents", "options": ["Harper's Brewpub"]},
+		{"label": "Best Meal under $5", "options": ["Aladdin's Restaurant", "Tony's", "Crunchy's", "Harper's Brewpub", "The Riv"]},
+		{"label": "Best Bakery", "options": []}
+	],
+	"Drinks": [
+		{"label": "Best Happy Hour/Drink Specials", "options": ["P.T. O'Malley's", "Crunchy's", "Harper's Brewpub", "The Riv"]},
+		{"label": "Best Cocktail", "options": ["P.T. O'Malley's", "Crunchy's", "Harper's Brewpub", "The Peanut Barrel"]},
+		{"label": "Best Margarita", "options": ["Harper's Brewpub", "Los Tres Amigos"]},
+		{"label": "Best East Lansing Bar", "options": ["P.T. O'Malley's", "Crunchy's", "Harper's Brewpub", "The Riv"]},
+		{"label": "Best Lansing Bar", "options": []},
+		{"label": "Best Dance Spot", "options": ["P.T. O'Malley's", "Harper's Brewpub"]},
+		{"label": "Best Karaoke", "options": ["Crunchy's"]}
+	],
+	"Services": [
+		{"label": "Best Salon/Spa", "options": ["Massage & Wellness", "Nogginz Hair Shop"]},
+		{"label": "Best Tanning Salon", "options": []},
+		{"label": "Best Gym", "options": []},
+		{"label": "Best Massage", "options": ["Massage & Wellness"]},
+		{"label": "Best Bike/Scooter Shop", "options": []}
+	],
+	"Stores": [
+		{"label": "Best Grocery Store", "options": []},
+		{"label": "Best Organic Store", "options": []},
+		{"label": "Best Party Store", "options": []},
+		{"label": "Best Bookstore", "options": ["Student Book Store"]},
+		{"label": "Best Cell Phone Service", "options": []},
+		{"label": "Best Flowershop", "options": ["B/A Florist"]},
+		{"label": "Best Sporting Goods Store", "options": []},
+		{"label": "Best Clothing Store", "options": ["Student Book Store"]},
+		{"label": "Best Home Décor Store", "options": ["B/A Florist"]},
+		{"label": "Best Vintage/Thrift Store", "options": []},
+		{"label": "Best Shoe Store", "options": []},
+		{"label": "Best Craft/Hobby Store", "options": ["Sundance Jewelers"]}
+	],
+	"Living": [
+		{"label": "Best On Campus Housing", "options": []},
+		{"label": "Best Apartment Complex", "options": ["The Pointe @3636", "Abbott Place Apartments", "Campus Village", "DTN Communities", "Chandler Crossings (The Club, The Landings, The Village)"]}
+	],
+	"Other": [
+		{"label": "Best Theater", "options": []},
+		{"label": "Best Place to Study", "options": []},
+		{"label": "Best Bank", "options": ["MSU Federal Credit Union"]},
+		{"label": "Best MSU Merchandise", "options": ["Student Book Store"]},
+		{"label": "Best New Business", "options": ["East Grand Record Co.", "That’s How We Roll Tobacco Shop"]},
+		{"label": "Best Unique Business", "options": ["Massage & Wellness", "The Record Lounge", "East Grand Record Co.", "B/A Florist", "That’s How We Roll Tobacco Shop"]},
+		{"label": "Best Hidden Gem", "options": ["Massage & Wellness", "The Record Lounge"]},
+		{"label": "Best Student Publication", "options": ["The State News"]}
+	]
+};

@@ -1,0 +1,47 @@
+{% extends "gryphon/base.mbl" %}
+
+{% block content %}
+
+
+<div class="col1">
+
+	<h2>{{ poll.title }}</h2>
+
+	<p>{{ poll.question }}</p>
+
+	<table style="width:100%">
+		<thead>
+			<tr>
+				<th style="padding-bottom:10px;font-weight:bold;">Response</th>
+				<th style="padding-bottom:10px;font-weight:bold;">Percent</th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for response in poll.getResponses() %}
+			<tr>
+				<td style="padding-bottom:10px;">{{ response.answer }}</td>
+				<td style="padding-bottom:10px;">{{ response.percent }}%</td>
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+
+	<hr class="spacer" />
+
+	{% if not poll.userHasVoted %}
+	<h2>Vote</h2>
+	<br />
+	<form method="post" action="{{ poll.urlSubmit }}">
+		<ul>
+		{% for id,response in poll.answers %}
+			<li style="padding-bottom:10px;"><input type="radio" name="answer" value="{{ id }}" id="{{ id }}"> <label for="{{ id }}">{{ response }}</label></li>
+		{% endfor %}
+		</ul>
+
+		<input type="submit" value="Vote" />
+	</form>
+
+	{% endif %}
+</div>
+
+{% endblock content %}
